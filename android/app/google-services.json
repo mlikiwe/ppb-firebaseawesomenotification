@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "289864427664",
+    "project_id": "auth-modul-c256b",
+    "storage_bucket": "auth-modul-c256b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289864427664:android:e76d753fe362f31e099015",
+        "android_client_info": {
+          "package_name": "com.example.fireauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO7P-O22LT05VcuyKlsPM2iuGWQ2DDOuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

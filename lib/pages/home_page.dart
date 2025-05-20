@@ -29,17 +29,6 @@ class HomePage extends StatelessWidget {
                 OutlinedButton(
                   onPressed: () async {
                     await NotificationService.createNotification(
-                      id: 1,
-                      title: 'Default Notification',
-                      body: 'This is the body of the notification',
-                      summary: 'Small summary',
-                    );
-                  },
-                  child: const Text('Default Notification'),
-                ),
-                OutlinedButton(
-                  onPressed: () async {
-                    await NotificationService.createNotification(
                       id: 2,
                       title: 'Notification with Summary',
                       body: 'This is the body of the notification',
@@ -104,7 +93,18 @@ class HomePage extends StatelessWidget {
                   },
                   child: const Text('Action Button Notification'),
                 ),
-                
+                OutlinedButton(
+                  onPressed: () async {
+                    await NotificationService.createNotification(
+                      id: 5,
+                      title: 'Scheduled Notification',
+                      body: 'This is the body of the notification',
+                      scheduled: true,
+                      interval: Duration(seconds: 5),
+                    );
+                  },
+                  child: const Text('Scheduled Notification'),
+                )
               ],
             )
           );

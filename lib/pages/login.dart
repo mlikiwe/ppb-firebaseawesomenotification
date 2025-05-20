@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:fireauth/services/notification_service.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -55,6 +56,13 @@ class _LoginScreenState extends State<LoginScreen> {
         _errorCode = getFriendlyError(e.code);
       });
     }
+
+    await NotificationService.createNotification(
+      id: 1,
+      title: 'Warning!!!',
+      body: 'You have been hacked',
+      summary: 'fatal',
+    );
 
     setState(() {
       _isLoading = false;
